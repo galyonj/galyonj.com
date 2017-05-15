@@ -1,0 +1,30 @@
+ol.breadcrumb {
+	background: transparent;
+	margin: 0;
+	padding: 20px 0 0;
+
+	& > li {
+		font-size: $font-size-small;
+
+		> a {
+			color:           $text-color;
+			text-decoration: underline;
+			transition:      all $speed $easing;
+
+			&:active,
+			&:focus,
+			&:hover {
+				color:           $brand-primary;
+				text-decoration: none;
+			}
+		}
+
+		&:last-of-type {
+			font-weight: 300;
+		}
+
+		& + li:before {
+			content: '\27E9';
+		}
+	}
+}

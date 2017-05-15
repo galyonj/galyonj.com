@@ -1,0 +1,23 @@
+gnore phpstorm garbage
+.idea/
+
+# Ignore some backup stuff
+no/
+!no/nelson.jpg
+
+# Ignore theme example stuff
+/site/web/app/themes/galyonj/**/*example.*
+
+# Ignore super secret stuff
+/trellis/.vault_pass
+
+# Node
+node_modules
+test/results
+test/coverage
+
+# OS X garbage
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes

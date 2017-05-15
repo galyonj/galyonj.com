@@ -1,0 +1,101 @@
+* {
+	font-weight: 300;
+}
+body {
+	border-top: 15px solid $text-color;
+}
+header:not( .header-row ) {
+	padding-bottom: 20px;
+}
+main {
+	padding-bottom: 40px;
+}
+footer {
+	&.post-footer {
+		border-top: 1px solid $gray-lighter;
+		margin:     30px 0 0;
+		padding:    30px 0 0;
+	}
+}
+
+.col-xs-12 {
+	padding-left:  30px;
+	padding-right: 30px;
+}
+
+// Index/category/tag page styling
+
+.post-container {
+	> div {
+		border-bottom: 1px solid $gray-lighter;
+		margin:        0 0 30px;
+		padding:       0 0 25px;
+		width:         100%;
+
+		&:not(:first-of-type) {
+			border:  0;
+			padding: 0;
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media #{ $medium-screen } {
+	.post-container {
+
+		> div {
+			border-bottom: 1px solid $gray-lighter;
+			margin:        0 0 30px;
+			padding:       0 0 25px;
+
+			&:not(:first-of-type) {
+				border:         0;
+				display:        inline-block;
+				margin:         0 0 30px 0;
+				width:          331px;
+				vertical-align: top;
+			}
+
+			&:nth-of-type( even ) {
+				margin: 0 30px 30px 0;
+			}
+
+			&.malinky-ajax-pagination-loading {
+				width: 100% !important;
+			}
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media #{ $large-screen } {
+	.post-container {
+		> div {
+			&:not(:first-of-type) {
+				width: 406px;
+			}
+		}
+	}
+}
+
+.jumbotron {
+	background-repeat: no-repeat;
+	background-size:   cover;
+
+	.col-xs-12 {
+		padding: 0;
+	}
+}
+
+@media #{ $small-screen } {
+	.col-xs-12 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

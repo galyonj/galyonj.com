@@ -1,0 +1,93 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=Bitter|Fira+Mono|Fira+Sans:300,300i,500,500i');
+
+// Import Bootstrap
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Hooray variables
+// Basic speed/easing variables for later
+$speed: 350ms;
+$easing: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+// Screen size variables that are easier to remember than
+// those provided by bootstrap.
+$xsmall-screen: "screen and ( max-width: 767px )";
+$small-screen: "screen and ( min-width: 768px )";
+$medium-screen: "screen and ( min-width: 992px )";
+$large-screen: "screen and ( min-width: 1200px )";
+
+// color
+$color: $input-border-focus;
+$color-rgba: rgba(red($color), green($color), blue($color), .6);
+
+body {
+	margin: 15px;
+}
+// Normal list styling
+ul:not( [class] ) {
+	display: table;
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+
+	li {
+		display: table-row;
+		font-weight: 300;
+
+		&:before {
+			content: "\25FC";
+			display: table-cell;
+			padding-right: 10px;
+		}
+	}
+}
+
+a {
+	color:           $text-color;
+	font-weight:     500;
+	text-decoration: underline;
+	transition:	     all $speed $easing;
+
+	&:active,
+	&:focus,
+	&:hover {
+		color:           $brand-primary;
+		text-decoration: none;
+	}
+}
+b, strong,
+body.webkit strong,
+body.webkit b {
+	font-weight: 500 !important;
+}
+
+ol:not( [class] ) {
+	display: table;
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+
+	li {
+		counter-increment: table-ol;
+		display: table-row;
+		font-weight: 300;
+
+		&:before {
+			content: counter(table-ol) ".";
+			display: table-cell;
+			padding-right: 10px;
+			text-align: right;
+		}
+	}
+}
+
+pre {
+	background: #263238;
+	border:     0;
+	font-size:  13px;
+	padding: 14px;
+
+	code {
+		color:   #C3D3DE;
+	}
+}

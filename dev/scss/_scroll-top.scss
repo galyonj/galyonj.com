@@ -1,0 +1,20 @@
+.scroll-top {
+	background-color: $gray-dark;
+	border-radius:    100%;
+	bottom:           20px;
+	color:            $gray-lighter;
+	font-size:        $font-size-h4;
+	padding:          2px 12px 4px;
+	position:         fixed;
+	right:            20px;
+	text-align:       center;
+	z-index:          1000;
+	transition:       all $speed $easing;
+
+	&:active,
+	&:focus,
+	&:hover {
+		background: $gray-darker;
+		color:      #fff;
+	}
+}

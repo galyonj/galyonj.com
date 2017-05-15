@@ -1,0 +1,32 @@
+/**
+Theme Name:  galyonj.com
+Theme URI:   https://galyonj.com
+Author Name: John Galyon
+Author URI:  https://galyonj.com
+Description: Responsive, minimalist theme for galyonj.com
+Version:     1.0
+License:     MIT
+License URI: https://github.com/galyonj/galyonj.com/LICENSE.md
+Text domain: galyonj
+*/
+
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=Bitter|Fira+Mono|Fira+Sans:300,300i,500,500i');
+
+// Import Bootstrap
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Import Bourbon
+@import 'bourbon';
+
+// Import theme-specific stuff
+@import 'variables';
+@import 'structure';
+@import 'nav';
+@import 'breadcrumbs';
+@import 'scroll-top';
+@import 'type';
+@import 'code';
+@import 'images';
+@import 'forms';
+@import 'footer';

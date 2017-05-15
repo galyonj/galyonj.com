@@ -1,0 +1,251 @@
+article {
+	p {
+		color: darken( $gray-light, 5%) ;
+		font-family: $font-family-base;
+		font-weight: 300;
+
+		a {
+			color:           $text-color;
+			//font-weight:     500;
+			text-decoration: underline;
+			transition:	     all $speed $easing;
+
+			&:active,
+			&:focus,
+			&:hover {
+				color:           $brand-primary;
+				text-decoration: none;
+				transition:	     all $speed $easing;
+			}
+
+			.fa {
+				margin: 0 0 0 5px;
+			}
+		}
+
+		code {
+			background:  $gray-lighter;
+			color:       $brand-danger;
+			font-weight: 300;
+			padding:     3px;
+		}
+
+		.spoiler {
+			background: $text-color;
+			color:      $text-color;
+			padding:    5px;
+
+			&:active,
+			&:focus,
+			&:hover {
+				color: $gray-lighter;
+			}
+		}
+	}
+
+	// Normal list styling
+	ul:not( [class] ) {
+		display: table;
+		margin-left: 0;
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			display: table-row;
+			font-weight: 300;
+
+			&:before {
+				content: "\25FC";
+				display: table-cell;
+				padding-right: 10px;
+			}
+		}
+	}
+
+	ol:not( [class] ) {
+		display: table;
+		margin-left: 0;
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			counter-increment: table-ol;
+			display: table-row;
+			font-weight: 300;
+
+			&:before {
+				content: counter(table-ol) ".";
+				display: table-cell;
+				padding-right: 10px;
+				text-align: right;
+			}
+		}
+	}
+
+	.meta-row {
+		ul.post-meta {
+			border-bottom: 1px solid $gray-lighter;
+			border-top:    1px solid $gray-lighter;
+			margin: 5px 0 20px;
+			padding: 10px 0;
+
+			li {
+				border-right: 1px solid $gray-lighter;
+				font-size:    $font-size-small;
+				list-style:   none;
+				display:      inline-block;
+				margin:       0 7px 0 0;
+				padding:      0 15px 0 0;
+
+				&:last-of-type {
+					border: 0;
+					margin: 0;
+					padding: 0;
+				}
+
+				a {
+					color:           $text-color;
+					text-decoration: underline;
+					transition:      all $speed $easing;
+
+					&:active,
+					&:focus,
+					&:hover {
+						color:           $brand-primary;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+	.well {
+		h2 {
+			&:first-of-type {
+				margin-top: 0;
+			}
+		}
+		p {
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.post-footer {
+	h2 {
+		font-size: $font-size-h4;
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+}
+
+// Style the first post on the index page
+.post-repeater {
+	h2 {
+		font-size: $font-size-h4;
+		margin-top: 15px;
+		a {
+			color:      $text-color;
+			transition: all $speed $easing;
+
+			&:active,
+			&:focus,
+			&:hover {
+				color:           $brand-primary;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+strong {
+	font-weight: 500 !important;
+}
+
+// Captions
+figcaption {
+	font-size: $font-size-small;
+}
+
+// Jumbotron
+.jumbotron {
+	h1 {
+		margin: 0;
+		a {
+			color: #fff;
+			text-shadow: 2px 2px 15px #000;
+
+			&:active,
+			&:focus,
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+@media #{ $small-screen } {
+	.jumbotron {
+		h1 {
+			font-size: 50px;
+		}
+	}
+	.container {
+		.jumbotron {
+			padding-left:  30px;
+			padding-right: 30px;
+		}
+	}
+}
+
+@media #{ $medium-screen } {
+	.jumbotron {
+		h1 {
+			font-size: 65px;
+		}
+	}
+}
+
+@media #{ $large-screen } {
+	.jumbotron {
+		h1 {
+			font-size: 80px;
+		}
+	}
+}
+
+// Blockquote styling
+blockquote {
+	border-left: 5px solid $gray-dark;
+	font-size:   $font-size-base;
+	font-style:  italic;
+}
+
+@media #{ $xsmall-screen } {
+	.meta-row {
+		ul.post-meta {
+			border-bottom: 1px solid $gray-lighter;
+			border-top:    1px solid $gray-lighter;
+			margin:        5px 0 20px;
+			padding:       10px 0;
+			text-align:    center;
+
+			li {
+				border-right: 1px solid $gray-lighter;
+
+				&:last-of-type {
+					border:  0;
+					margin:  0;
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+.btn {
+	font-weight: 300;
+}

@@ -1,0 +1,14 @@
+// Basic speed/easing variables for later
+$speed: 350ms;
+$easing: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+// Screen size variables that are easier to remember than
+// those provided by bootstrap.
+$xsmall-screen: "screen and ( max-width: 767px )";
+$small-screen: "screen and ( min-width: 768px )";
+$medium-screen: "screen and ( min-width: 992px )";
+$large-screen: "screen and ( min-width: 1200px )";
+
+// color
+$color: $input-border-focus;
+$color-rgba: rgba(red($color), green($color), blue($color), .6);

@@ -1,0 +1,97 @@
+.gist {
+	.gist-file {
+		font-family: $font-family-monospace !important;
+	}
+	.gist-data {
+		background-color: #263238 !important;
+	}
+	.highlight {
+		background-color: #263238 !important;
+		-webkit-tab-size: 4 !important;
+		-moz-tab-size:    4 !important;
+		-o-tab-size:      4 !important;
+		tab-size:         4 !important;
+	}
+	.blob-num {
+		color:     #475F63 !important;
+		font-size: 13px !important;
+	}
+	.blob-code,
+	.blob-num {
+		line-height: 1.44 !important;
+	}
+	.blob-code-inner {
+		color:       #798194 !important;
+		font-family: $font-family-monospace !important;
+		font-size:   13px !important;
+	}
+}
+
+// PHP specific coloring
+.type-php {
+	.pl-pse {
+		color: #BE2C23;
+	}
+	.pl-c {
+		color: #546E7A !important;
+	}
+	.pl-k {
+		color: #C792EA !important;
+	}
+	.pl-c1 {
+		color: #82B1FF !important;
+	}
+	.pl-s, .pl-pds {
+		color: #C3E887 !important;
+	}
+	.pl-smi {
+		color: #FF5370 !important;
+	}
+	.pl-s1 {
+		color: #C3D3DE !important;
+	}
+}
+
+// SCSS specific coloring
+.type-scss {
+	.pl-ent {
+		color: #FF5370 !important;
+	}
+	.pl-e {
+		color: #FFC251 !important;
+	}
+	.pl-c1 {
+		color: #F78C6C !important;
+
+		& .pl-c1 {
+			color: #FFCB6B !important;
+		}
+	}
+	.pl-k {
+		color: #F78C6C !important;
+	}
+	.pl-smi {
+		color: #F78C6C !important;
+	}
+	.pl-s,
+	.pl-pds {
+		color: #C3E88D !important;
+	}
+}
+
+// HTML specific coloring
+.type-html {
+	.blob-code-inner {
+		color: #C3CEE3 !important;
+	}
+	.pl-ent {
+		color: #6DC2B8 !important;
+	}
+	.pl-e {
+		color: #FFC251 !important;
+	}
+	.pl-s,
+	.pl-pds {
+		color: #C3E88D !important;
+	}
+}
