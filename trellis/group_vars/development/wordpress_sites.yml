@@ -3,13 +3,16 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  example.com:
+  galyonj.com:
     site_hosts:
-      - canonical: example.dev
+      - canonical: galyonj.dev
         redirects:
-          - www.example.dev
+          - www.galyonj.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: admin@example.dev
+    admin_email: galyon.jb@gmail.com
+    admin_user: jgalyon
+    db_name: galyonj_dev_db
+    db_prefix: morrigan_
     multisite:
       enabled: false
     ssl:
