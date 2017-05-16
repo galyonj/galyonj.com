@@ -6351,7 +6351,7 @@ article figure {
   height: auto; }
 
 .nf-field-label .label {
-  font-weight: 500; }
+  font-weight: 500 !important; }
 
 footer:not([class]) {
   background: #eeeeee;
