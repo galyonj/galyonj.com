@@ -5848,20 +5848,19 @@ ol:not([class]) {
       padding-right: 10px;
       text-align: right; }
 
-.alignleft {
+img.alignleft {
   float: left;
   height: auto;
   margin: 0 20px 20px 0;
   width: 50%; }
 
-.alignright {
+img.alignright {
   float: right;
   height: auto;
   margin: 0 0 20px 20px;
   width: 50%; }
 
-.aligncenter,
-.alignnone {
+img.aligncenter, img.alignnone {
   height: auto;
   margin: 20px 0;
   width: 100%; }
