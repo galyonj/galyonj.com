@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7823a0f992e4fbf65a563d01bccfc1f",
+    "content-hash": "9895de842ad968aa9c129f5fa912a4dc",
     "packages": [
         {
             "name": "composer/installers",
@@ -417,7 +417,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/bootstrap-3-shortcodes.3.3.10.zip",
-                "reference": null,
+                "reference": "tags/3.3.10",
                 "shasum": null
             },
             "require": {
@@ -465,6 +465,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/malinky-ajax-pagination/"
+        },
+        {
+            "name": "wpackagist-plugin/ninja-forms",
+            "version": "3.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ninja-forms/",
+                "reference": "tags/3.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.1.1.zip",
+                "reference": "tags/3.1.1",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ninja-forms/"
         },
         {
             "name": "wpackagist-plugin/no-category-base-wpml",
@@ -565,6 +585,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/what-the-file/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-mail-smtp",
+            "version": "0.10.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
+                "reference": "tags/0.10.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.0.10.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-mail-smtp/"
         }
     ],
     "packages-dev": [

@@ -2,7 +2,7 @@ gnore phpstorm garbage
 .idea/
 
 # Ignore some backup stuff
-bkup/*.sql
+*.sql
 bkup/.xml
 !*.jpg
 
