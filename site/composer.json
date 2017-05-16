@@ -49,7 +49,7 @@
     "wpackagist-plugin/sucuri-scanner": "^1.8",
     "wpackagist-plugin/bootstrap-3-shortcodes": "^3.3",
     "wpackagist-plugin/ninja-forms": "^3.1",
-    "wpackagist-plugin/wp-mail-smtp": "^0.10.1"
+    "wpackagist-plugin/gmail-smtp": "^1.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
