@@ -1,0 +1,6 @@
+vault_mail_password: qpwMv6cwLvBnWczNSzfL
+
+env=development
+vault_mysql_root_password: V5YJDndnfBfhwXF2qxAN
+admin_password: E4qQx9vnMLsEgf9xJsg3
+db_password: PLAf6y2AdMJjyLmZ62pG

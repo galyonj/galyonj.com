@@ -2,8 +2,9 @@ gnore phpstorm garbage
 .idea/
 
 # Ignore some backup stuff
-no/
-!no/nelson.jpg
+bkup/*.sql
+bkup/.xml
+!*.jpg
 
 # Ignore theme example stuff
 /site/web/app/themes/galyonj/**/*example.*
