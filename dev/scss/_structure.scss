@@ -18,6 +18,12 @@ footer {
 	}
 }
 
+::selection,
+::-moz-selection {
+	background: $gray-dark;
+	color: $gray-lighter;
+}
+
 .col-xs-12 {
 	padding-left:  30px;
 	padding-right: 30px;

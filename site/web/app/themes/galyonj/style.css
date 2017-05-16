@@ -5830,6 +5830,16 @@ footer.post-footer {
   margin: 30px 0 0;
   padding: 30px 0 0; }
 
+::-moz-selection,
+::-moz-selection {
+  background: #333333;
+  color: #eeeeee; }
+
+::selection,
+::-moz-selection {
+  background: #333333;
+  color: #eeeeee; }
+
 .col-xs-12 {
   padding-left: 30px;
   padding-right: 30px; }
