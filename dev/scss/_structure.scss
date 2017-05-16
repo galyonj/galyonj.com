@@ -18,10 +18,13 @@ footer {
 	}
 }
 
-::selection,
+::selection {
+	background: $gray-dark;
+	color:      $gray-lighter;
+}
 ::-moz-selection {
 	background: $gray-dark;
-	color: $gray-lighter;
+	color:      $gray-lighter;
 }
 
 .col-xs-12 {
