@@ -7,15 +7,13 @@ users:
     groups:
       - "{{ web_group }}"
     keys:
-      - "~/.ssh/galyonj.pub"
-      # - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+      - "{{ lookup('file', '~/.ssh/galyonj.pub') }}"
       # - https://github.com/username.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
-      - "~/.ssh/galyonj.pub"
-      # - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+      - "{{ lookup('file', '~/.ssh/galyonj.pub') }}"
       # - https://github.com/username.keys
 
 web_user: web
