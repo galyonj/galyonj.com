@@ -6350,6 +6350,9 @@ article figure {
   width: 100%;
   height: auto; }
 
+.nf-field-label .label {
+  font-weight: 500; }
+
 footer:not([class]) {
   background: #eeeeee;
   border-top: 1px solid #c8c8c8;
