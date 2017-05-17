@@ -4,6 +4,7 @@ gnore phpstorm garbage
 # Ignore some backup stuff
 *.sql
 bkup/.xml
+bkup/*-article/
 !*.jpg
 
 # Ignore theme example stuff

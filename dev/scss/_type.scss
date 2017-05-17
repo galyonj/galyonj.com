@@ -166,7 +166,9 @@ strong {
 
 // Captions
 figcaption {
-	font-size: $font-size-small;
+	color:      $gray-dark;
+	font-size:  $font-size-small;
+	font-style: italic;
 }
 
 // Jumbotron
