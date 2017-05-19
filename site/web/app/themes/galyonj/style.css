@@ -5846,6 +5846,11 @@ footer.post-footer {
   padding-left: 30px;
   padding-right: 30px; }
 
+.comment-area {
+  border-top: 1px solid #eeeeee;
+  margin: 30px 0 0;
+  padding: 30px 0 0; }
+
 .post-container > div {
   border-bottom: 1px solid #eeeeee;
   margin: 0 0 30px;
@@ -6084,15 +6089,10 @@ article p {
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300; }
   article p a {
-    color: #333333;
-    text-decoration: underline;
+    color: #e37222;
+    font-weight: 500;
     -webkit-transition: all 200ms cubic-bezier(0.7, 0, 0, 0.7);
     transition: all 200ms cubic-bezier(0.7, 0, 0, 0.7); }
-    article p a:active, article p a:focus, article p a:hover {
-      color: #e37222;
-      text-decoration: none;
-      -webkit-transition: all 200ms cubic-bezier(0.7, 0, 0, 0.7);
-      transition: all 200ms cubic-bezier(0.7, 0, 0, 0.7); }
     article p a .fa {
       margin: 0 0 0 5px; }
   article p code {
@@ -6170,6 +6170,13 @@ article .well p:last-of-type {
   font-size: 25px; }
   .post-footer h2:first-of-type {
     margin-top: 0; }
+
+.comment-respond h3 {
+  font-size: 25px;
+  margin-top: 0; }
+
+.comment-form .required {
+  color: #d9534f; }
 
 .post-repeater h2 {
   font-size: 25px;
@@ -6365,6 +6372,32 @@ article figure {
 
 .nf-field-label .label {
   font-weight: 500 !important; }
+
+.comment-area ol {
+  margin: 0;
+  padding: 0; }
+  .comment-area ol li {
+    list-style: none; }
+    .comment-area ol li ol {
+      border-left: 10px solid #333333;
+      margin: 20px 0 0 0;
+      padding: 0 0 0 20px; }
+
+.comment-meta a {
+  font-weight: 500; }
+
+.comment-meta .comment-metadata time {
+  margin: 0 5px 0 0; }
+
+.comment-meta .comment-metadata .edit-link {
+  margin: 0 0 0 5px; }
+
+.comment-meta .comment-author.vcard img {
+  float: left;
+  margin: 0 20px 0 0; }
+
+.comment-respond {
+  margin-top: 20px; }
 
 footer:not([class]) {
   background: #eeeeee;

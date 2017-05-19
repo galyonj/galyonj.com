@@ -1,0 +1,42 @@
+.comment-area {
+	ol {
+		margin:  0;
+		padding: 0;
+
+		li {
+			list-style: none;
+
+			ol {
+				border-left: 10px solid $gray-dark;
+				margin: 20px 0 0 0;
+				padding: 0 0 0 20px;
+			}
+		}
+	}
+}
+
+.comment-meta {
+	a {
+		font-weight: 500;
+	}
+
+	.comment-metadata {
+		time {
+			margin: 0 5px 0 0;
+		}
+		.edit-link {
+			margin: 0 0 0 5px;
+		}
+	}
+
+	.comment-author.vcard {
+		img {
+			float: left;
+			margin: 0 20px 0 0;
+		}
+	}
+}
+
+.comment-respond {
+	margin-top: 20px;
+}

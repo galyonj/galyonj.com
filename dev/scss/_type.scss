@@ -4,18 +4,10 @@ article {
 		font-weight: 300;
 
 		a {
-			color:           $text-color;
-			//font-weight:     500;
-			text-decoration: underline;
+			color:           $brand-primary;
+			font-weight:     500;
+			//text-decoration: underline;
 			transition:	     all $speed $easing;
-
-			&:active,
-			&:focus,
-			&:hover {
-				color:           $brand-primary;
-				text-decoration: none;
-				transition:	     all $speed $easing;
-			}
 
 			.fa {
 				margin: 0 0 0 5px;
@@ -138,6 +130,20 @@ article {
 		&:first-of-type {
 			margin-top: 0;
 		}
+	}
+}
+
+// comments
+.comment-respond {
+	h3 {
+		font-size:  $font-size-h4;
+		margin-top: 0;
+	}
+}
+
+.comment-form {
+	.required {
+		color: $brand-danger;
 	}
 }
 
