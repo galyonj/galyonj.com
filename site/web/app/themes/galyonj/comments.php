@@ -86,7 +86,7 @@ if ( post_password_required() ) {
 		                   . ( $req ? '<span class="required">*</span>' : '' ) . '<textarea id="comment" name="comment" class="form-control" rows="8" ' . $aria_req . '></textarea></div>',
 		'fields'        => apply_filters( 'comment_form_default_fields', $fields ),
 		'submit_button' => '<input name="%1$s" type="submit" id="%2$s" class="%3$s btn btn-default" value="%4$s" />',
-		'title_reply'   => __( 'Leave a reply', 'galyonj' ),
+		'title_reply'   => __( 'Leave a reply', 'galyonj' )
 	);
 
 	comment_form( $comment_args );

@@ -172,32 +172,3 @@ function manual_excerpt_more( $excerpt ) {
 	return $excerpt . $excerpt_more;
 }
 add_filter( 'get_the_excerpt', 'manual_excerpt_more' );
-
-/**
- * Modify the heading elements on a page to
- * streamline the workflow for in-page navigation
- * during the content creation process
- *
- * @param $content
- *
- * @return mixed
- */
-/*function add_heading_id( $content ) {
-
-	// Pattern that we want to match
-	$pattern = '<h\d>';
-
-	// now run the pattern and callback function on content
-	// and process it through a function that replaces the title with an id
-	$content = preg_replace_callback( $pattern, function ( $matches ) {
-
-		$title = reset( $matches );
-		$slug = sanitize_title_with_dashes( $title );
-		return '<h2 id="' . $slug . '">' . $title . '</h2>';
-
-	}, $content );
-
-	return $content;
-}
-
-add_filter('the_content', 'add_heading_id');*/
