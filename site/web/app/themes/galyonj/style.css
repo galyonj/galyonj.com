@@ -6161,6 +6161,13 @@ article .well h2:first-of-type {
 article .well p:last-of-type {
   margin-bottom: 0; }
 
+article blockquote footer {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-align: left; }
+
 .post-footer h2 {
   font-size: 25px; }
   .post-footer h2:first-of-type {
