@@ -6221,7 +6221,7 @@ article .well h2:first-of-type {
 article .well p:last-of-type {
   margin-bottom: 0; }
 
-article blockquote footer {
+blockquote footer {
   background: none;
   border: 0;
   margin: 0;

@@ -122,17 +122,18 @@ article {
 			}
 		}
 	}
+}
 
-	blockquote {
-		footer {
-			background: none;
-			border: 0;
-			margin: 0;
-			padding: 0;
-			text-align: left;
-		}
+blockquote {
+	footer {
+		background: none;
+		border: 0;
+		margin: 0;
+		padding: 0;
+		text-align: left;
 	}
 }
+
 .post-footer {
 	h2 {
 		font-size: $font-size-h4;
